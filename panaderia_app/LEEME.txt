@@ -1,0 +1,30 @@
+PROYECTO: Sistema de Gestión para Panadería
+TECNOLOGÍA: PHP 8 y MySQL
+APRENDIZ: [Tu Nombre Completo]
+
+--- DESCRIPCIÓN DEL PROYECTO ---
+
+Este es un sistema web para la gestión de una panadería, desarrollado en PHP siguiendo una arquitectura modular y segura. El proyecto demuestra las competencias fundamentales del desarrollo de software, incluyendo la conexión a bases de datos, la implementación de operaciones CRUD (Crear, Leer, Actualizar, Eliminar) y la aplicación de estándares de codificación y seguridad.
+
+--- CÓMO CUMPLE LA EVIDENCIA GA7-220501096-AA2-EV01 ---
+
+Aunque la evidencia sugiere Java/JDBC, este proyecto cumple con la totalidad de los requerimientos conceptuales y funcionales utilizando el stack PHP/MySQL, que es un estándar en la industria para el desarrollo web.
+
+1. CONEXIÓN CON BASES DE DATOS:
+   - Archivo: /config/database.php
+   - Descripción: Este script gestiona de forma centralizada la conexión con la base de datos MySQL usando el conector 'mysqli'. Incluye manejo de errores de conexión y configuración del charset (UTF-8). Es el equivalente funcional a una clase de conexión JDBC.
+
+2. FUNCIONALIDADES CRUD (Inserción, Consulta, Actualización, Eliminación):
+   - Módulo de ejemplo: /modulos/empleados/
+   - Consulta (Read): 'index.php' muestra la lista de empleados.
+   - Inserción (Create): 'crear.php' (formulario) y 'guardar.php' (lógica de inserción con sentencias preparadas y hasheo de contraseña).
+   - Actualización (Update): 'editar.php' (formulario) y 'actualizar.php' (lógica de actualización con sentencias preparadas).
+   - Eliminación (Delete): 'eliminar.php' (lógica de borrado con sentencias preparadas y validaciones de negocio).
+
+3. ESTÁNDARES DE CODIFICACIÓN Y ESTRUCTURA:
+   - Nomenclatura: Se usa un estilo consistente (snake_case para variables PHP).
+   - Estructura de Paquetes (Directorios): El proyecto está organizado en carpetas que separan responsabilidades (config, modulos, templates, assets), similar a la estructura de paquetes en Java.
+   - Seguridad: Se utilizan sentencias preparadas en todas las consultas para prevenir inyección SQL y se hashean las contraseñas con los algoritmos modernos de PHP.
+
+4. USO DE VERSIONAMIENTO:
+   - El código fuente está gestionado en un repositorio Git. El enlace se encuentra en el archivo 'repositorio.txt'.
