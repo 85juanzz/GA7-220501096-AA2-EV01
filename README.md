@@ -82,4 +82,4 @@ A continuación se detalla cómo el proyecto aborda cada punto:
 -   **Seguridad:** Como se mencionó, el proyecto implementa hasheo de contraseñas y sentencias preparadas para garantizar la seguridad de los datos.
 
 ### 4. Uso de Versionamiento
--   **Repositorio:** El código fuente está gestionado en un repositorio Git. El enlace se puede encontrar en el archivo `repositorio.txt`.
+-   **Repositorio:** El código fuente está gestionado en un repositorio Git.
