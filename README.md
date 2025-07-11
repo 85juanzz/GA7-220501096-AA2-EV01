@@ -4,7 +4,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap)
 
-**Aprendiz:** [Tu Nombre Completo]
+**Aprendiz:** Juan Martinez
 
 ---
 
@@ -33,30 +33,28 @@ Sigue estos pasos para instalar y ejecutar el proyecto en un entorno local.
 
 ### Pasos de Instalación
 
-1.  **Descargar el Proyecto:**
-    Clona o descarga este repositorio en la carpeta `htdocs` (para XAMPP) o `www` (para WAMP) de tu servidor local.
+1.  **Clonar o Descargar el Proyecto:**
+    Ubica la carpeta `htdocs` (para XAMPP) o `www` (para WAMP) de tu servidor local y clona o descarga este repositorio dentro de ella.
 
-2.  **Base de Datos:**
+2.  **Crear e Importar la Base de Datos:**
     -   Abre `phpMyAdmin` desde el panel de control de tu servidor local.
-    -   Crea una nueva base de datos llamada `panaderia_db`.
-    -   Selecciona la base de datos `panaderia_db` y ve a la pestaña "Importar".
-    -   Importa el archivo `panaderia_db.sql` que se encuentra en la raíz de este proyecto. (***Nota:*** *Deberás crear este archivo exportando la estructura y los datos de tu base de datos*).
+    -   Crea una nueva base de datos llamada **`panaderia_db`**.
+    -   **Este repositorio incluye el archivo `panaderia_db.sql`**. Este archivo contiene toda la estructura de las tablas y los datos necesarios para probar la aplicación.
+    -   Para restaurar la base de datos, selecciona la base de datos `panaderia_db` recién creada y usa la opción **"Importar"** para subir y ejecutar el archivo `panaderia_db.sql`.
 
-3.  **Configuración:**
-    El archivo de conexión `/config/database.php` está preconfigurado para un entorno local estándar (usuario `root` sin contraseña). Si tu configuración es diferente, ajústala en este archivo.
+3.  **Configuración de Conexión:**
+    El archivo `/config/database.php` está preconfigurado para un entorno local estándar (usuario `root` sin contraseña). Si tu configuración de MySQL es diferente, por favor, ajusta las credenciales en este archivo.
 
-4.  **Ejecutar:**
-    -   Asegúrate de que los servicios de Apache y MySQL estén corriendo.
-    -   Abre tu navegador y ve a `http://localhost/Panaderia_Proyecto_PHP/` (o el nombre que le hayas dado a la carpeta del proyecto).
+4.  **Ejecutar la Aplicación:**
+    -   Asegúrate de que los servicios de Apache y MySQL estén corriendo en tu panel de control.
+    -   Abre tu navegador y ve a la URL: **`http://localhost/Panaderia_Proyecto_PHP/`** (o el nombre que le hayas dado a la carpeta del proyecto).
 
-### Credenciales de Acceso
+### Credenciales de Acceso para Pruebas
 
-Para probar la funcionalidad de administrador, utiliza las siguientes credenciales:
+El archivo `panaderia_db.sql` ya incluye un usuario **administrador** creado para facilitar las pruebas. Por favor, utiliza las siguientes credenciales para acceder:
 
 -   **Usuario:** `admin`
 -   **Contraseña:** `admin123`
-
-*(Asegúrate de que este usuario exista en tu base de datos con el rol 'Administrador').*
 
 ---
 
